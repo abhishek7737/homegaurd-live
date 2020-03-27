@@ -1,0 +1,133 @@
+/*logo */
+.logo {
+    border-radius: 50%;
+    box-shadow: 4px 4px 5px grey;
+}
+	/*background color*/
+.bg-custom {
+    background-color: #00bcd4;
+}
+   
+#body-row .bg-custom {
+    background-color: #00bcd4;
+}
+        
+/*home icon*/
+#navbarNavDropdown .home a{
+      color: black;
+       }
+            
+#navbarNavDropdown .home a:hover{
+      color: #f8f8f8;
+       }
+            
+.title-web {
+    font-size: 24px; 
+    margin-left: 1%;
+}
+      
+#body-row {
+    margin-left:0;
+    margin-right:0;
+}
+#sidebar-container {
+    min-height: 100vh;   
+    background-color: #00bcd4;
+    padding: 0;
+	position: fixed;
+	z-index:1;
+	overflow:hidden;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 250px;
+}
+.sidebar-collapsed {
+    width: 60px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+    height: 50px;
+    color: white;
+}
+
+#sidebar-container .list-group a:hover {
+    color: black;
+}
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+/* Separators */
+.sidebar-separator-title {
+    background-color: white;
+    height: 35px;
+	font-size: 16px;
+}
+.sidebar-separator {
+    background-color: #00bcd4;
+    height: 25px;
+}
+.logo-separator {
+    background-color: #00bcd4;    
+    height: 60px;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+
+/* icons in sidebar */
+#sidebar-container .sidebar-img{
+    width: 20px;
+    height: 20px;
+}
+
+/*search bar*/
+.search-container input[type=text] {
+			  padding: 4px;
+			  margin-top: 9px;
+			  font-size: 11px;
+			  border: none;
+			}
+			
+.search-container button {
+			  float: right;
+			  padding: 7px 10px;
+			  margin-top: 9px;
+			  margin-right: 16px;
+			  background: #ddd;
+			  font-size: 7px;
+			  border: none;
+			  cursor: pointer;
+			}
+
+.search-container button:hover {
+			  background: #ccc;
+			}
+
+@media screen and (max-width: 600px) {
+			  .search-container {
+				float: none;
+			  }

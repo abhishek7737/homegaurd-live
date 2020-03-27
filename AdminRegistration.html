@@ -1,0 +1,278 @@
+<!Doctype html>
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Rajasthan Homeguards</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" href="FinalAttendance.css">
+        <link rel="stylesheet" href="Dashboard.css">
+        <link rel="stylesheet" href="VolunteerRegistration.css">   <!----- Use same CSS of Volunteer Signup for Admin Signup page ----->
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+        <!-- Font Awesome JS -->
+
+        <script defer="" src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer="" src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+        
+    </head>
+    
+    <body>
+        <!-- Bootstrap NavBar -->
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-custom" style="width: 100%;">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="Homeguards_img.jpeg" width="54" height="54" class="d-inline-block align-top logo" alt="">
+                <span class="sm title-web"><b>RAJASTHAN HOME GUARDS TRAINING CENTER, BHILWARA</b></span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active home">
+                        <a class="nav-link" href="Dashboard.html" title="home"><i class="fa fa-home" style="font-size: 19px;" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav><!-- NavBar END -->
+
+        <!----------- Main Body ------------>
+        <!-- Bootstrap row for Sidebar container -->
+        <div class="row" id="body-row">
+            <!-- Sidebar begins -->
+            <div id="sidebar-container" class="sidebar-expanded d-none d-sm-block">
+                <!-- d-* hiddens the Sidebar in smaller devices. Its items can be kept on the Navbar 'Menu' -->
+                <!-- Bootstrap List Group -->
+                <ul class="list-group">
+                    <a href="#top" data-toggle="sidebar-colapse" class="bg-custom list-group-item list-group-item-action d-flex align-items-center">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                            <span id="collapse-text" class="menu-collapsed"></span>
+                        </div>
+                    </a>
+                    <!-- Separator with title MAIN MENU -->
+                    <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                        <small>MAIN &nbsp; MENU</small>
+                    </li>
+                    <!-- /END Separator -->
+                    <!-- Menu with submenu -->
+                    <a href="FinalAttendance.html" class="bg-custom list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="mr-0"></span>
+                            <img src="usercheck3.png" class="sidebar-img">
+                            <span class="menu-collapsed ml-3">Attendance Record</span>
+                        </div>
+                    </a>
+                    <a href="volunteers.html" class="bg-custom list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="mr-0"></span>
+                            <img src="Vol_list.png" class="sidebar-img">
+                            <span class="menu-collapsed ml-3">Volunteers List</span>
+                        </div>
+                    </a>
+                    <a href="CheckPointList.html" class="bg-custom list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="mr-0"></span>
+                            <img src="checkpoint2.png" class="sidebar-img">
+                            <span class="menu-collapsed ml-3">Checkpoint</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="bg-custom list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="mr-0"></span>
+                            <img src="Trash.png" class="sidebar-img">
+                            <span class="menu-collapsed ml-3">Trash</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-custom list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="mr-0"></span>
+                            <img src="Profile.png" class="sidebar-img">
+                            <span class="menu-collapsed ml-3">My Profile</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-custom list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="mr-0"></span>
+                            <img src="directory.png" class="sidebar-img">
+                            <span class="menu-collapsed ml-3">Contact Directory</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-custom list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="mr-0"></span>
+                            <img src="bug.png" class="sidebar-img">
+                            <span class="menu-collapsed ml-3">Bug Report</span>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-custom list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-start align-items-center">
+                            <span class="mr-0"></span>
+                            <img src="Logout.png" class="sidebar-img">
+                            <span class="menu-collapsed ml-3">Logout</span>
+                        </div>
+                    </a>
+                </ul><!-- List Group END-->
+            </div><!-- sidebar ENDS -->
+
+            <!-- Body for Admin Signup -->
+            <div class="col p-4 d-none d-sm-block">
+                <!--------- Header for Admin Signup ----------->
+                <div class="header row register-header">
+                    <span class="col-4"></span>
+                    <span  class="col-4 register-header-1"><b>Admin Signup</b></span>
+                    <span  class="col-4"></span>
+                </div>
+
+                <!---------- Form body --------->
+                <div class="container">
+                    <form style=" margin-top: 2%; margin-left: 10%;">
+                        <fieldset>
+                            <!------------------------->
+                            <table class="form-table">
+                                <tr> 
+                                    <td><label for="ad_belt_no">Belt Number</label></td>
+                                    <td><input type="text" class="input1" name="ad_belt_no" id="ad_belt_no" /></td>
+                                </tr>
+                                <tr> 
+                                    <td><label for="ad_name_eng">Name (in English)</label></td>
+                                    <td><input type="text" class="input1" name="ad_name_eng" id="ad_name_eng" placeholder="Enter your name in English"/></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_name_hindi">Name (in Hindi)</label></td>
+                                    <td class="td2"><input type="text" class="input1" name="ad_name_hindi" id="ad_name_hindi" placeholder="Enter your name in Hindi"/></td>
+                                </tr>
+                                <tr> 
+                                    <td><label for="ad_gender_id">Gender</label></td>
+                                    <td class="td2"><select name="gender" id="ad_gender_id" class="input1">
+                                        <option value="">Select</option>
+                                        <option value="M">Male</option>
+                                        <option value="F">Female</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_name_father">Father's Name</label></td>
+                                    <td class="td2"><input type="text" class="input1" name="ad_name_father" id="ad_name_father" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_per_add">Permanent Address</label></td>
+                                    <td class="td2"><textarea name="ad_per_add" id="ad_per_add" rows="2" cols="41"></textarea></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><br /><label for="ad_curr_add">Current Address</label><br />
+                                        &nbsp;&nbsp;<input type="checkbox" name="ad_curr_add" id="ad_curr_add" />&nbsp;&nbsp;Same as permanent address
+                                    </td>
+                                    <td class="td2"><textarea name="ad_curr_add" id="ad_curr_add" rows="2" cols="41"></textarea></td>
+
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_dob">Date of Birth</label></td>
+                                    <td class="td2"><input type="date" class="input1" name="ad_dob" id="ad_dob" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_email">Email address</label></td>
+                                    <td class="td2"><input type="ad_email" class="input1" name="ad_email" id="ad_email" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_ad_qual">Qualification</label></td>
+                                    <td class="td2"><select name="ad_qual" id="ad_qual" class="input1">
+                                        <option value="">Select</option>
+                                        <option value="PG">Post Graduation</option>
+                                        <option value="G">Graduation</option>
+                                        <option value="HS">Higher Secondary</option>
+                                        <option value="S">Secondary</option>
+                                        <option value="O">Other</option></select>
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="designation">Designation</label></td>
+                                    <td class="td2"><input type="text" class="input1" name="designation" id="designation" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="curr_post">Current posting</label></td>
+                                    <td class="td2"><input type="text" class="input1" name="curr_post" id="curr_post" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_join_date">Joining Date</label></td>
+                                    <td class="td2"><input type="date" class="input1" name="join_date" id="join_date" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_ret_date">Retirement Date</label></td>
+                                    <td class="td2"><input type="date" class="input1" name="ret_date" id="ret_date" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_training">Trainings Done</label></td>
+                                    <td class="td2"><textarea name="ad_training" id="ad_training" rows="2" cols="41"></textarea></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_remarks">Remarks</label></td>
+                                    <td class="td2"><textarea name="ad_remarks" id="ad_remarks" rows="2" cols="41"></textarea></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_mob_no">Mobile Number</label></td>
+                                    <td class="td2"><input type="tel" class="input1" name="ad_mob_no" id="ad_mob_no" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_aadhar_no">Aadhar Number</label></td>
+                                    <td class="td2"><input type="text" class="input1" name="ad_aadhar_no" id="ad_aadhar_no" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_pan_no">PAN Number</label></td>
+                                    <td class="td2"><input type="text" class="input1" name="ad_pan_no" id="ad_pan_no" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_bank_acc_no">Bank Account Number</label></td>
+                                    <td class="td2"><input type="text" class="input1" name="ad_bank_acc_no" id="ad_bank_acc_no" /></td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_photo_upload">Photograph upload</label></td>
+                                    <td><input type="file" name="ad_photoToUpload" id="ad_photo_upload">
+                                        <button type="submit" value="Admin Upload Photo" name="submit" class="photo"><strong>Upload</strong></button>
+                                    </td>
+                                </tr>
+                                <tr> 
+                                    <td class="td1"><label for="ad_sign_upload">Signature upload</label></td>
+                                    <td><input type="file" name="ad_signToUpload" id="ad_sign_upload">
+                                        <button type="submit" value="Admin Upload sign" name="submit" class="photo"><strong>Upload</strong></button>
+                                    </td>
+                                </tr>
+                            </table> 
+                            <article class="row section-buttons" style="">
+                                <div class="col-6 buttons">
+                                    <button type="submit" class="btn success"><strong>Submit</strong></button>
+                                </div>
+                                <div class="col-6 buttons">
+                                    <button type="reset" class="btn reset1"><strong>Reset</strong></button>
+                                </div>
+                            </article>
+                        </fieldset>
+                    </form>
+
+                </div><!--END of Form body-->
+            </div><!-- END of body for Admin Signup -->
+        </div><!-- body-row END -->
+        
+        <!--------- JQuery and JS sources ----------->
+        
+        <script defer="" src="Dashboard.js"></script>
+        <script defer="" src="FinalAttendance.js"></script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    </body>
+</html>

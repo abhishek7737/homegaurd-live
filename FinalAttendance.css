@@ -1,0 +1,280 @@
+/* Skyblue color changed to #00bcd4 for navbar and sidebar*/
+
+/* Body alignment for removal of spaces around webpage */
+body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* Logo*/
+.logo {
+    border-radius: 50%;
+    box-shadow: 4px 4px 5px grey;
+}
+
+/* background blue color css */
+.bg-custom {
+    background-color: #00bcd4;
+}
+   
+#body-row .bg-custom {
+    background-color: #00bcd4;
+}
+     
+/* Home icon */
+#navbarNavDropdown .home a{
+    color: black;
+}
+
+#navbarNavDropdown .home a:hover{
+    color: #f8f8f8;
+}
+.title-web {
+    font-size: 24px; 
+    margin-left: 1%;
+}
+font-size: 24px;
+#body-row {
+    margin-left:0;
+    margin-right:0;
+}
+#sidebar-container {
+    min-height: 100vh;   
+    background-color: #00bcd4;
+    padding: 0;
+    position: fixed;  /* These 3 lines for fixed sidebar */       /* 1 */
+    z-index: 1;                                                   /* 2 */
+    overflow-x: hidden;                                           /* 3 */
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 250px;
+}
+.sidebar-collapsed {
+    width: 60px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+    height: 50px;
+    color: white;
+}
+
+#sidebar-container .list-group a:hover {
+    color: black;
+}
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+/* Separators in sidebar */
+.sidebar-separator-title {
+    background-color: white;
+    height: 35px;
+    font-size: 16px;
+    
+}
+.sidebar-separator {
+    background-color: #00bcd4;
+    height: 25px;
+}
+.logo-separator {
+    background-color: #00bcd4;    
+    height: 60px;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+}
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
+
+}
+
+/* icons in sidebar */
+#sidebar-container .sidebar-img{
+    width: 20px;
+    height: 20px;
+}
+
+/* Header containing Attendance Record section */
+.attendance-header {
+    height: 50px;
+    background-color: #f4f2f2;
+    margin-top: -23px;
+    
+}
+
+/* Title Attendance Record  */
+.attendance-header .attendance-header-1 {
+    font-size: 20px; 
+    margin: 1% 0% 1% 0%;
+    display:flex; 
+    justify-content: space-around;
+    
+}
+
+/* Dropdowns placed in Attendance header */
+.attendance-header .attendance-header-2 {
+    display:flex; 
+    justify-content: flex-end; 
+    margin: 1% 0% 1.2% 0%;
+}
+/* Popup form styling*/
+h3{
+    text-shadow: 4px 4px 4px grey;
+}
+/* Edit details popup */
+#loginPopup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+/* Remove volunteer popup */
+#deletePopup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+/* Fix the button in the Action Field */
+.open-btn {
+    display: flex;
+    justify-content: left;
+}
+/* Style and fix the button on the page #39a4e6*/
+.open-button {
+    background-color: transparent;
+    color: #0707d9;
+    padding: 3px 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.remove {
+    background-color: transparent;
+    color: red;
+    padding: 3px 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    font-size: 19px;
+}
+
+
+
+/* Hide the Popup form */
+.form-popup {
+    border: 2px solid #666;
+    z-index: 9;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.form-popup-delete {
+    border: 2px solid #666;
+    z-index: 9;
+    max-width: 310px;
+    margin: 0 auto;
+}
+
+/* Styles for the form container */
+.form-container {
+    max-width: 350px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Full-width for input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #eee;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Style submit/login button  */
+.form-container .btn {
+    background-color: #8ebf42;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Style cancel button  #e31818*/
+.form-container .cancel {
+    background-color: #ed1f1f;
+    opacity: 0.8;
+}
+
+/* Style warning button */
+.form-container .warning {
+    background-color: darkorange;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Hover effects for buttons */
+.form-container .btn:hover, .form-container .btn:hover {
+    opacity: 1;
+}
+
+.open-button:hover, .remove:hover {
+    opacity: .8;
+    background-color: lightgrey;
+}
